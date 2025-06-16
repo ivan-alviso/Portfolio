@@ -9,27 +9,31 @@ body {
 }
 
 /* Navigation */
+/* Navigation - in a colored box */
 .navbar {
   position: fixed;
   top: 20px;
   right: 30px;
-  background: #fff;
-  padding: 10px 20px;
+  background: #007acc; /* Blue box */
+  padding: 12px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
 .navbar a {
   margin: 0 10px;
-  color: #007acc;
+  color: #ffffff; /* White text inside blue box */
   text-decoration: none;
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 .navbar a:hover {
   text-decoration: underline;
+  color: #e0f4ff; /* Slight hover effect */
 }
+
 
 /* Container */
 .container {
