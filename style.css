@@ -79,12 +79,7 @@ body {
 .nav-links a:hover {
      color: #3a78ec;
 }
-  /*  
-#about { background-color: #ffffff; }
-#projects { background-color: #ffffff; } 
-#skills { background-color: #ffffff; }
-#contact { background-color: #ffffff; }
-*/
+
 /* Container */
 .container-1 {
   margin: auto;
