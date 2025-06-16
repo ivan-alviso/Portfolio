@@ -14,7 +14,6 @@ body {
   font-family: 'Segoe UI', Roboto, sans-serif;
   background-color: #0d1117;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 /* Skills Section */
@@ -90,19 +89,22 @@ body {
 }
 
 .container-2 {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+  background-color: #333;
   color: #fff;
-  background: #0d1117;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-  margin-top: 6rem;
+}
+
+/* Section Headings and Borders */
+.container-2 h2 {
+  color: #fff;
+  border-bottom: 2px solid #007acc;
 }
 
 /* Sections */
 header {
-  background-color: #0d1117;
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  color: #0d1117;
 }
 
 section, footer {
