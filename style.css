@@ -78,7 +78,6 @@ body {
 */
 /* Container */
 .container-1 {
-  color: #ffffff;
   margin: auto;
   padding: 12rem;
   background: #626e85;
@@ -129,11 +128,11 @@ ul {
 }
 
 a {
-  color: #007acc;
   text-decoration: none;
 }
 
 a:hover {
+  color: #007acc;
   text-decoration: underline;
 }
 
