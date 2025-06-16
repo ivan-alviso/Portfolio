@@ -1,4 +1,14 @@
 /* Reset & Base */
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Roboto, sans-serif;
@@ -31,30 +41,40 @@ body {
 /* Navigation */
 /* Navigation - in a colored box */
 .navbar {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
-  top: 20px;
-  right: 30px;
-  background: #007acc; /* Blue box */
-  padding: 12px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 
-.navbar a {
-  margin: 0 10px;
-  color: #ffffff; /* White text inside blue box */
-  text-decoration: none;
+.navbar .logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
-  color: #e0f4ff; /* Slight hover effect */
+.navbar .nav-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
+.navbar .nav-links a:hover {
+  color: #00bcd4;
+}
+
+#about { background-color: #f9f9f9; }
+#projects { background-color: #eaeaea; } 
+#skills { background-color: #dcdcdc; }
+#contact { background-color: #cccccc; }
 
 /* Container */
 .container {
