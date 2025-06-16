@@ -71,10 +71,10 @@ body {
   color: #00bcd4;
 }
 
-#about { background-color: #f9f9f9; }
-#projects { background-color: #eaeaea; } 
-#skills { background-color: #dcdcdc; }
-#contact { background-color: #cccccc; }
+#about { background-color: #424242; }
+#projects { background-color: #424242; } 
+#skills { background-color: #424242; }
+#contact { background-color: #424242; }
 
 /* Container */
 .container {
@@ -99,8 +99,8 @@ h1 {
 }
 
 h2 {
-  color: #ffffff;
-  border-bottom: 2px solid #eee;
+  color: #333;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 0.3rem;
 }
 
