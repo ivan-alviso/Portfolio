@@ -35,6 +35,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.skills-list li:hover {
+  background: #556977;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
 
 /* Navigation */
 /* Navigation - in a colored box */
@@ -80,7 +89,7 @@ body {
 .container-1 {
   margin: auto;
   padding: 12rem;
-  background: #626e85;
+  background: #eeeeee;
 }
 
 .container-2 {
@@ -128,6 +137,7 @@ ul {
 }
 
 a {
+  color: #007acc;
   text-decoration: none;
 }
 
