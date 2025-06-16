@@ -7,7 +7,7 @@
     }
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 60px; /* match your navbar height */
+      scroll-padding-top: 100px; /* match your navbar height */
 }
 
 body {
@@ -200,4 +200,8 @@ footer {
 #home p{
   color: #c0cde9;
   font-size: 22px;
+}
+
+#contact p {
+  margin-top:0.8rem;
 }
