@@ -121,11 +121,6 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-h1 p {
-  color: #c0cde9;
-  font-size: 12px;
-}
-
 h2 {
   color: #0d1117;
   border-bottom: 2px solid #0d1117;
@@ -167,4 +162,9 @@ footer {
 
 .social-icons a:hover {
   color: #007acc;
+}
+
+#home p{
+  color: #c0cde9;
+  font-size: 22px;
 }
