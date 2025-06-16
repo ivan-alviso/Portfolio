@@ -79,6 +79,7 @@ body {
 /* Container */
 .container-1 {
   color: #333;
+  margin: auto;
   padding: 2rem;
   background: #ffffff;
 }
