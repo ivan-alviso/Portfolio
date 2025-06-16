@@ -81,7 +81,7 @@ body {
   color: #333;
   margin: auto;
   padding: 12rem;
-  background: #ffffff;
+  background: #a8bfe9;
 }
 
 .container-2 {
@@ -111,7 +111,6 @@ header {
 
 section, footer {
   margin-bottom: 2rem;
-  background: #0d1117;
 }
 
 h1 {
