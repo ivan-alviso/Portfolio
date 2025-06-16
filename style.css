@@ -19,7 +19,7 @@ body {
 /* Skills Section */
 .skills-list {
   list-style: none;
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding-left: 0;
   display: grid;
   text-align: center;
@@ -162,6 +162,10 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #d6d6d6;
+}
+
+.social-icons p {
+  margin-top: 10rem;
 }
 
 .social-icons a {
