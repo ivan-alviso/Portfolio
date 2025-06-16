@@ -42,7 +42,7 @@ body {
 .navbar {
      width: 100%;
      height: 60px;
-     background-color: #1f1f1f;
+     background-color: #0d1117;
      color: #fff;
      display: flex;
      justify-content: flex-end;
@@ -78,10 +78,10 @@ body {
 */
 /* Container */
 .container-1 {
-  color: #333;
+  color: #ffffff;
   margin: auto;
   padding: 12rem;
-  background: #a8bfe9;
+  background: #626e85;
 }
 
 .container-2 {
@@ -89,7 +89,6 @@ body {
   margin: auto;
   padding: 2rem;
   color: #fff;
-  background: #13171f;
   box-shadow: 0 10px 30px, #0d1117;
   border-radius: 12px;
   margin-top: 6rem;
@@ -103,7 +102,6 @@ body {
 
 /* Sections */
 header {
-  background-color: #ffffff;
   padding: 2rem;
   text-align: center;
   color: #333;
