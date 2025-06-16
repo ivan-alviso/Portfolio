@@ -90,8 +90,13 @@ body {
 }
 
 /* Sections */
-header, section, footer {
+header {
+  background-color: #e3f2fd;
+}
+
+section, footer {
   margin-bottom: 2rem;
+  background-color: #0d1117;
 }
 
 h1 {
