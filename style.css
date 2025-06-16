@@ -22,24 +22,37 @@ body {
   padding-left: 0;
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 10px;
-  margin-top: 1rem;
+  justify-items: center;
 }
 
 .skills-list li {
   background: #e3f2fd;
   padding: 10px 15px;
   border-radius: 8px;
+  border-color: #e3f2fd;
   font-weight: 500;
   color: #0d47a1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%; /* makes each item fill its column */
+  max-width: 180px;
+  text-align: center;
+}
+
+.skills-list li:nth-last-child(2):nth-child(odd):last-child {
+  grid-column: 2 / span 2; /* if only one item in last row, center it */
+}
+
+.skills-list li:nth-last-child(2):nth-child(even):last-child {
+  grid-column: 2; /* if 2 items in last row, center them starting at column 2 */
 }
 
 .skills-list li:hover {
-  background: #556977;
+  background: #007acc;
   padding: 10px 15px;
   border-radius: 8px;
+  border-color: #e3f2fd;
   font-weight: 500;
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
