@@ -19,6 +19,7 @@ body {
 /* Skills Section */
 .skills-list {
   list-style: none;
+  margin-top: 5rem;
   padding-left: 0;
   display: grid;
   text-align: center;
