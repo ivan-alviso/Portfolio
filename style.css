@@ -40,37 +40,39 @@ body {
 
 /* Navigation */
 /* Navigation - in a colored box */
+/* ✅ FULL-WIDTH NAVBAR */
 .navbar {
-  width: 100%;
-  background-color: #1f1f1f;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+     width: 100%;
+     height: 60px;
+     background-color: #1f1f1f;
+     color: #fff;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 2rem;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+/* ✅ RIGHT-ALIGNED LINKS ONLY */
+.nav-links {
+     display: flex;
+     gap: 20px;
 }
 
-.navbar .nav-links a {
-  margin-left: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+.nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1rem;
+     transition: color 0.3s ease;
 }
 
-.navbar .nav-links a:hover {
-  color: #00bcd4;
+.nav-links a:hover {
+     color: #00bcd4;
 }
-
+    
 #about { background-color: #ffffff; }
 #projects { background-color: #ffffff; } 
 #skills { background-color: #ffffff; }
