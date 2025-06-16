@@ -78,8 +78,6 @@ body {
 */
 /* Container */
 .container-1 {
-  max-width: 800px;
-  margin: auto;
   padding: 2rem;
   color: #333;
   background: #ffffff;
@@ -89,8 +87,14 @@ body {
 }
 
 .container-2 {
-  background-color: #0d1117;
-  color: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  color: #333;
+  background: #0d1117;
+  box-shadow: 0 10px 30px, #0d1117;
+  border-radius: 12px;
+  margin-top: 6rem;
 }
 
 /* Section Headings and Borders */
