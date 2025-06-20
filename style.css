@@ -215,12 +215,12 @@ footer {
 
 #home h1{
   font-size: 6vh;
+  margin: 30vh;
 }
 
 #home header{
   text-align: center;
   vertical-align: middle;
-  margin: 30vh;
 }
 
 #contact p {
