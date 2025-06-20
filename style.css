@@ -189,23 +189,23 @@ footer {
   height: 200px;
 }
 
-.social-icons p {
-  margin-top: 2.5rem;
-}
 
 .social-icons a {
-  margin-left: 10px;
+  margin-left: 15px;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.social-icons a i {
   font-size: 30px;
 }
 
 .social-icons a:hover {
   color: #007acc;
+}
+
+.social-icons p{
+  padding-top: 50px;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 #home p{
@@ -219,14 +219,6 @@ footer {
 }
 
 #home header{
-  text-align: center;
-}
-
-#contact p {
-  margin-top:20px;
-}
-
-#contact {
   text-align: center;
 }
 
