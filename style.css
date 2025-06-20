@@ -215,7 +215,7 @@ footer {
 
 #home h1{
   font-size: 6vh;
-  margin: 30vh;
+  margin-top: 30vh;
 }
 
 #home header{
@@ -224,7 +224,7 @@ footer {
 }
 
 #contact p {
-  margin-top:0.8rem;
+  margin-top:20px;
 }
 
 #contact {
