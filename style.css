@@ -219,7 +219,8 @@ footer {
 
 #home header{
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
+  margin: 30vh;
 }
 
 #contact p {
@@ -228,6 +229,6 @@ footer {
 
 #contact {
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
