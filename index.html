@@ -9,6 +9,20 @@
   <link rel="icon" href="ivan-icon.png" type="image/png">
 </head>
 <body>
+  <div class="flashlight-overlay"></div>
+  <div class="gradientfilter"></div>
+    <script>
+  const flashlight = document.querySelector('.flashlight-overlay');
+
+  document.addEventListener('mousemove', (e) => {
+    const x = `${e.clientX}px`;
+    const y = `${e.clientY}px`;
+    flashlight.style.setProperty('--x', x);
+    flashlight.style.setProperty('--y', y);
+    gradientfilter.style.setProperty('--x', x);
+    gradientfilter.style.setProperty('--y', y);
+  });
+</script>
   <div class="container-1" id="home">
     <header>
       <h1>Hi, I'm <span style ="color: #28b6da;">Ivan</span>.</h1>
@@ -17,6 +31,7 @@
     <a href="#aboutme" class="scroll-down">
       &#x25BC; <!-- Unicode for down-pointing triangle (▼) -->
     </a>
+    
   </div>
 
   <!-- Navigation -->
@@ -29,17 +44,15 @@
       <a href="#contact">Contact</a>
     </div>
   </div>
-  
-  <div class="container-2" id="aboutme">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm currently studying Computer Engineering. I love combining visual creativity with logical problem solving, and I thrive on projects that connect art, code, and data.
-        I'm particularly passionate about software development, UI/UX design, and digital media creation—especially illustration and video editing.
-        I believe in using technology not just to build things, but to tell stories, create experiences, and solve real-world problems. 
-      </p>
-
-      
+  <div class="main">
+    <div class="container-2" id="aboutme">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm currently studying Computer Engineering. I love combining visual creativity with logical problem solving, and I thrive on projects that connect art, code, and data.
+          I'm particularly passionate about software development, UI/UX design, and digital media creation—especially illustration and video editing.
+          I believe in using technology not just to build things, but to tell stories, create experiences, and solve real-world problems. 
+        </p>
     </section>
 
     <section id="skills">
@@ -83,5 +96,6 @@
       </p>
     <p>© 2025 Ivan Alviso</p>
   </footer>
+  </div>
   </body>
 </html>
