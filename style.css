@@ -118,8 +118,9 @@ header p {
 }
 
 .container-1 {
-  margin: auto;
-  height: 40rem;
+  position: absolute;
+  margin: 0;
+  height: 100vh;
   padding: 12rem;
   background-image: radial-gradient(circle, #252d3d, #0d1117);
 }
