@@ -210,7 +210,7 @@ footer {
 
 #home p{
   color: #c0cde9;
-  font-size: 2vh;
+  font-size: 4vh;
 }
 
 #home h1{
@@ -228,5 +228,6 @@ footer {
 
 #contact {
   text-align: center;
+  vertical-align: center;
 }
 
