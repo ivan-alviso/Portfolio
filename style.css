@@ -91,6 +91,7 @@ header p {
   width: 100%;
   height: 60px;
   background-color: #0d1117;
+  backdrop-filter: blur(8px);
   color: #fff;
   display: flex;
   justify-content: flex-end;
