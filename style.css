@@ -15,18 +15,32 @@ body {
   line-height: 1.6;
 }
 
-  header h1 {
+header h1 {
       opacity: 0;
       transform: translateX(-100px);
       animation: slideInLeft 1s forwards;
-  }
+    }
 
-  header p {
-    opacity: 0;
-    transform: translateX(100px);
-    animation: slideInRight 1s forwards;
-    animation-delay: 0.8s;
+header p {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .skills-list {
   list-style: none;
@@ -107,7 +121,7 @@ body {
 .container-1 {
   margin: auto;
   padding: 12rem;
-  background-image: radial-gradient(circle, #252d25, #0d1117);
+  background-image: radial-gradient(circle, #252d3d, #0d1117);
 }
 
 .container-2 {
