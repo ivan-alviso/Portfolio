@@ -150,7 +150,7 @@ header {
 }
 
 section, footer {
-  margin: 3rem;
+  margin: 8rem;
 }
 
 h1 {
@@ -209,15 +209,16 @@ footer {
 
 #home p{
   color: #c0cde9;
-  font-size: 5vh;
+  font-size: 2vh;
 }
 
 #home h1{
-  font-size: 10vh;
+  font-size: 6vh;
 }
 
 #home header{
   text-align: center;
+  vertical-align: center;
 }
 
 #contact p {
