@@ -41,6 +41,37 @@ header p {
   }
 }
 
+.scroll-down {
+  display: inline-block;
+  margin-top: 15vh;
+  font-size: 5vh;
+  color: #28b6da;
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
+  transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+  transform: scale(1.5);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.scroll-down:focus,
+.scroll-down:active, .scroll-down:hover {
+  outline: none;
+  text-decoration: none;
+  
+}
+
+
 .skills-list {
   list-style: none;
   margin-top: 2.5rem;
@@ -67,6 +98,7 @@ header p {
 }
 
 .skills-list li:hover {
+  text-decoration: none;
   background: #007acc;
   padding: 10px 15px;
   border-radius: 8px;
@@ -115,10 +147,12 @@ header p {
 }
 
 .nav-links a:hover {
-     color: #3a78ec;
+  text-decoration: none;
+  color: #3a78ec;
 }
 
 .container-1 {
+  text-align: center;
   position: top;
   margin: auto;
   height: 100vh;
