@@ -211,6 +211,10 @@ footer {
   font-size: 22px;
 }
 
+#home header{
+  text-align: center;
+}
+
 #contact p {
   margin-top:0.8rem;
 }
