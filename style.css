@@ -191,11 +191,11 @@ header p {
 }
 
 .projects-list {
-  margin-top: 2.5rem;
+  margin-top: 20px;
 }
 
 .projects-list li {
-  margin: 0.8rem;
+  margin: 10px;
   padding: 10px;
 }
 
@@ -272,7 +272,7 @@ header {
 }
 
 section {
-  margin: 5rem;
+  margin: 10px;
 }
 
 h1 {
@@ -337,7 +337,7 @@ footer {
 
 #home p{
   color: #c0cde9;
-  font-size: clamp(1rem, 3vw, 4vh);;
+  font-size: clamp(2rem, 3vw, 4vh);;
 }
 
 #home h1{
@@ -354,12 +354,6 @@ footer {
   max-width: 50%;
   margin: auto;
 }
-
-#skills p{
-  text-align: center;
-  margin: 0 auto 2rem auto;
-}
-
 
 #aboutme, #projects {
   margin-left: auto;
