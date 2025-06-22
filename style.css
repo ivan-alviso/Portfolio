@@ -149,7 +149,7 @@ header p {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 30px; 
+  gap: 100px; 
   justify-items: center;
   filter: drop-shadow(0 0 6px #3e84ee);
 }
