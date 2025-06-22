@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="icon" href="ivan-icon.png" type="image/png">
+  <meta name="description" content="Official portfolio of Ivan Alviso — showcasing creative coding, illustration, data projects, and UI/UX design.">
+  <meta name="keywords" content="Ivan Alviso, portfolio, graphic artist, web developer, UI/UX, data projects, illustrator">
+  <meta name="author" content="Ivan Alviso">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Ivan Alviso | Portfolio" />
+  <meta property="og:description" content="Graphic Artist, Developer, and Illustrator." />
 </head>
 <body>
   <div class="flashlight-overlay"></div>
@@ -19,8 +25,6 @@
     const y = `${e.clientY}px`;
     flashlight.style.setProperty('--x', x);
     flashlight.style.setProperty('--y', y);
-    gradientfilter.style.setProperty('--x', x);
-    gradientfilter.style.setProperty('--y', y);
   });
 </script>
   <div class="container-1" id="home">
@@ -47,16 +51,19 @@
   <div class="main">
     <div class="container-2" id="aboutme">
       <section id="about">
-        <h2>About Me</h2>
+        <h2><i class="fas fa-user"></i>   About <span style ="color: #28b6da;">Me</span></h2>
         <p>
-          I was just a kid who loved working on many things in life.
-          Now, I'm a man still turning his childhood dreams into reality.
-          If you need someone who blends art and logic, feel free to reach out.
+          I have a strong passion for blending creativity and technology. 
+          With a background in design, illustration, and software development, 
+          I enjoy building solutions that are both visually compelling and functionally sound. 
+          I thrive at the intersection of art and logic—crafting experiences that not only work well but resonate with people.
         </p>
     </section>
+    </div>
 
+    <div class="container-2">
     <section id="skills">
-      <h2>Skills</h2>
+      <h2><i class="fas fa-brain"></i>   Skills</h2>
       <ul class="skills-list">
         <li>Illustration</li>
         <li>Graphic Design</li>
@@ -66,9 +73,10 @@
         <li>3D Design</li>
       </ul>
     </section>
-
+    </div>
+    <div class="container-2">
     <section id="projects">
-      <h2>Projects</h2>
+      <h2><i class="fas fa-laptop-code project-icon"></i>   Projects</h2>
       <ul class="projects-list">
         <li><strong>Art Archive:</strong> Portfolio of artworks</li>
         <li><strong>This Portfolio:</strong> Built with HTML & CSS</li>
@@ -77,6 +85,7 @@
         <li><strong>Image Denoising Program:</strong> Built in Octave</li>
       </ul>
     </section>
+    </div>
   </div>
     
   <footer class="social-icons" id="contact">
