@@ -59,6 +59,7 @@ html, body {
 }
 .main {
   background-image: linear-gradient(180deg, #0d1117, #1d2530);
+  width: 100%;
 }
 
 header{
@@ -223,7 +224,7 @@ header p {
 .nav-links a {
      color: #fff;
      text-decoration: none;
-     font-size: 1.4rem;
+     font-size: 22px;
      transition: color 0.3s ease;
 }
 
