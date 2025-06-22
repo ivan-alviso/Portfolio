@@ -330,6 +330,11 @@ footer {
     gap: 40px;
   }
 
+  .subskill {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
 #home p{
   color: #c0cde9;
   font-size: 40px;
