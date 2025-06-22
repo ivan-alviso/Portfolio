@@ -64,9 +64,11 @@ body {
 header{
   margin: 0 10%;
   width: 80%;
+  
 }
 
 header h1 {
+  text-align: center;
   opacity: 0;
   transform: translateX(-100px);
   animation: slideInLeft 2s forwards;
@@ -74,6 +76,8 @@ header h1 {
 
 header p {
   opacity: 0;
+  padding-left: 40%;
+  text-align: left;
   transform: translateX(100px);
   animation: slideInRight 2s forwards;
 }
@@ -324,7 +328,7 @@ footer {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .skills-list {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -336,6 +340,10 @@ footer {
 
   .subskill li img{
     transform: scale(1);
+  }
+
+  #skills {
+    max-width: 80%;
   }
 }
 
