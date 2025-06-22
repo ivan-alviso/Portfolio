@@ -106,8 +106,8 @@ header p {
 
 .scroll-down {
   display: inline-block;
-  margin-top: 20px;
-  font-size: 2vh;
+  margin-top: 10%;
+  font-size: 50px;
   color: #28b6da;
   text-decoration: none;
   animation: bounce 1.5s infinite;
