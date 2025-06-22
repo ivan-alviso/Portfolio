@@ -69,6 +69,8 @@ header{
 
 header h1 {
   text-align: center;
+  font-size: clamp(2rem, 5vw, 6vh);
+  margin-top: clamp(10vh, 25vh, 30vh);
   opacity: 0;
   transform: translateX(-100px);
   animation: slideInLeft 2s forwards;
@@ -77,6 +79,8 @@ header h1 {
 header p {
   opacity: 0;
   padding-left: 40%;
+  color: #c0cde9;
+  font-size: clamp(2rem, 3vw, 4vh);;
   text-align: left;
   transform: translateX(100px);
   animation: slideInRight 2s forwards;
@@ -110,7 +114,7 @@ header p {
 
 .scroll-down {
   display: inline-block;
-  margin-top: 10%;
+  margin-bottom: 10%;
   font-size: 50px;
   color: #28b6da;
   text-decoration: none;
@@ -258,13 +262,20 @@ header p {
 }
 
 .container-2 h2 {
+  width: 50%;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
   font-size: 25px;
   font-weight: normal;
   color: #fff;
 }
 
 .container-2 p{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
   margin-top: 50px;
 }
@@ -328,6 +339,16 @@ footer {
   margin-bottom: 10px;
 }
 
+#skills {
+  max-width: 50%;
+  margin: auto;
+}
+
+#aboutme, #projects {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 640px) {
   .skills-list {
     grid-template-columns: 1fr;
@@ -342,33 +363,30 @@ footer {
     transform: scale(1);
   }
 
-  #skills {
-    max-width: 80%;
+  #skills{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-2 h2{
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .container-2 p#aboutme-p{
+    width: 80%;
+  }
+
+  .container-2 p#technical-skills{
+    width: 80%;
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .navbar a{
+    font-size: 15px;
   }
 }
 
-#home p{
-  color: #c0cde9;
-  font-size: clamp(2rem, 3vw, 4vh);;
-}
 
-#home h1{
-  font-size: clamp(2rem, 5vw, 6vh);
-  margin-top: clamp(10vh, 25vh, 30vh);
-}
-
-#home header{
-  text-align: center;
-}
-
-#skills {
-  perspective: 1000px;
-  max-width: 50%;
-  margin: auto;
-}
-
-#aboutme, #projects {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
