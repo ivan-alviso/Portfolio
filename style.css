@@ -72,6 +72,18 @@ header p {
   animation: slideInRight 2s forwards;
 }
 
+.typewriter-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+  color: #d0deee;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @keyframes slideInLeft {
   to {
     opacity: 1;
@@ -123,31 +135,41 @@ header p {
   padding-left: 0;
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 100px; 
   justify-items: center;
 }
 
 .skills-list li {
-  background: #e3f2fd;
+  background-image: linear-gradient(0deg, #365683, #315e92);
   padding: 10px 15px;
   border-radius: 8px;
-  border-color: #e3f2fd;
-  border: 3px solid #fff;
+  color: #dbdbdb;
   font-weight: 500;
-  color: #0d47a1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   width: 100%; 
-  max-width: 180px;
   text-align: center;
+}
+
+.subskill {
+  list-style: none;
+  margin-top: 2.5rem;
+  padding-left: 0;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+}
+
+.subskill li {
+  background: none;
+  box-shadow: none;
 }
 
 .skills-list li:hover {
   text-decoration: none;
-  background: #007acc;
+  background-image: linear-gradient(180deg,  #5078cf, #2c538d);
   padding: 10px 15px;
-  border-radius: 8px;
-  border-color: #e3f2fd;
   font-weight: 500;
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -216,10 +238,13 @@ header p {
 }
 
 .container-2 h2 {
+  margin-top: 50px;
+  font-weight: normal;
   color: #fff;
 }
 
 .container-2 p{
+  font-size: 2vh;
   margin-top: 2.5rem;
 }
 
@@ -297,3 +322,11 @@ footer {
   text-align: center;
 }
 
+#skills {
+  max-width: 100%;
+  margin: 10;
+}
+
+#skills p{
+  margin-left: 50vh;
+}

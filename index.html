@@ -17,25 +17,16 @@
 <body>
   <div class="flashlight-overlay"></div>
   <div class="gradientfilter"></div>
-    <script>
-  const flashlight = document.querySelector('.flashlight-overlay');
 
-  document.addEventListener('mousemove', (e) => {
-    const x = `${e.clientX}px`;
-    const y = `${e.clientY}px`;
-    flashlight.style.setProperty('--x', x);
-    flashlight.style.setProperty('--y', y);
-  });
-</script>
   <div class="container-1" id="home">
-    <header>
-      <h1>Hi, I'm <span style ="color: #28b6da;">Ivan</span>.</h1>
-      <p>A graphic artist, illustrator, programmer, and data enthusiast.</p>
-    </header>
-    <a href="#aboutme" class="scroll-down">
-      &#x25BC; <!-- Unicode for down-pointing triangle (▼) -->
-    </a>
-    
+  <header>
+    <h1>Hi, I'm <span style="color: #28b6da;">Ivan</span>.</h1>
+    <p class="typewriter-text"></p>
+  </header>
+
+  <a href="#aboutme" class="scroll-down">
+    &#x25BC;
+  </a>
   </div>
 
   <!-- Navigation -->
@@ -51,26 +42,54 @@
   <div class="main">
     <div class="container-2" id="aboutme">
       <section id="about">
-        <h2><i class="fas fa-user"></i>   About <span style ="color: #28b6da;">Me</span></h2>
-        <p>
-          I have a strong passion for blending creativity and technology. 
+        <p><i class="fas fa-user"></i><b>   About <span style ="color: #28b6da;">Me</b></span></p>
+        <h2>
+          I have a strong passion for blending <span style ="color: #28b6da;"><b>creativity</b></span> and <span style ="color: #28b6da;"><b>technology</b></span>. 
           With a background in design, illustration, and software development, 
           I enjoy building solutions that are both visually compelling and functionally sound. 
-          I thrive at the intersection of art and logic—crafting experiences that not only work well but resonate with people.
-        </p>
+        </h2> 
+        <h2>I thrive at the intersection of <span style ="color: #28b6da;"><b>art</b></span> and <span style ="color: #28b6da;"><b>logic</b></span>
+          —crafting experiences that not only work well but resonate with people.
+        </h2>
     </section>
     </div>
 
-    <div class="container-2">
-    <section id="skills">
-      <h2><i class="fas fa-brain"></i>   Skills</h2>
+    <div class="container-2" id="skills">
+    <section>
+      <p><b><i class="fas fa-cog"></i>   Technical Skills & Tools I use</b></p>
       <ul class="skills-list">
-        <li>Illustration</li>
-        <li>Graphic Design</li>
-        <li>Programming</li>
-        <li>Data Analysis</li>
-        <li>Video Editing</li>
-        <li>3D Design</li>
+        <li>Illustration & Graphic Design
+          <ul class="subskill">
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Canva_Logo.svg" alt="Canva" width="50"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" width="20"></li>
+          </ul>
+        </li>
+        <li>Software Development
+          <ul class="subskill">
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" width="30"></li>
+            <li><img src="https://labs.mysql.com/common/logos/mysql-logo.svg" alt="MySQL" width="50"></li>
+          </ul>
+        </li>
+        <li>Data Science & Statistics
+          <ul class="subskill">
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gnu-octave-logo.svg" alt="Octave" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="Matlab" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Matlab" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" width="30"></li>
+          </ul>
+        </li>
+        <li>Video Editing & 3D Design
+          <ul class="subskill">
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Pro" width="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Capcut-logo.svg" alt="Capcut" width="80"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg" alt="Blender" width="80"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/AutoCad_logo.svg" alt="AutoCad" width="80"></li>
+          </ul>
+        </li>
       </ul>
     </section>
     </div>
@@ -106,5 +125,52 @@
     <p>© 2025 Ivan Alviso</p>
   </footer>
   </div>
+
+  <script>
+    const roles = [
+      "I am a graphic artist.",
+      "I am an illustrator.",
+      "I am a programmer.",
+      "I am a data enthusiast.",
+      "I am a video editor."
+    ];
+
+    const el = document.querySelector('.typewriter-text');
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentRole = roles[roleIndex];
+      const currentText = isDeleting
+        ? currentRole.substring(0, charIndex--)
+        : currentRole.substring(0, charIndex++);
+
+      el.textContent = currentText;
+
+      if (!isDeleting && charIndex === currentRole.length) {
+        setTimeout(() => isDeleting = true, 1200);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+
+      const speed = isDeleting ? 50 : 80;
+      setTimeout(type, speed);
+    }
+
+    document.addEventListener('DOMContentLoaded', type);
+  </script>
+
+  <script>
+    const flashlight = document.querySelector('.flashlight-overlay');
+
+    document.addEventListener('mousemove', (e) => {
+      const x = `${e.clientX}px`;
+      const y = `${e.clientY}px`;
+      flashlight.style.setProperty('--x', x);
+      flashlight.style.setProperty('--y', y);
+    });
+  </script>
   </body>
 </html>
