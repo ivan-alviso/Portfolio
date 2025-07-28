@@ -9,7 +9,7 @@ body {
   z-index: -1;
   min-height: 100vh;
   font-family: 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(0deg, #09091f, #101f3f);
+  background: linear-gradient(0deg, #09091f, #091b44);
   line-height: 1.6;
   color-scheme: light;
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -191,12 +191,13 @@ p a i:hover {
   max-width: 500px;
 }
 
-.coding a, .media a, .hobby a, .office a{
+.coding a, .media a, .hobby a, .office a {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #173547;
+  box-shadow: 0 4px 10px rgba(11, 11, 26, 0.37);;
+  background: #172c47; /* fallback */
   color: rgb(189, 244, 248);
   padding: 12px;
   border-radius: 20px;
@@ -204,12 +205,28 @@ p a i:hover {
   text-decoration: none;
   font-size: .85rem;
   height: 40px;
+  transition: background 0.2s ease-in-out;
 }
 
-.coding-tools a:hover {
-  background-color: #2196c9;
+.coding a:hover {
+  background: linear-gradient(135deg, #124677, #28b6da);
+  transition: background 0.2s ease-in-out;
 }
 
+.media a:hover {
+  background: linear-gradient(135deg, #250c69, #8133c3);
+  transition: background 0.2s ease-in-out;
+}
+
+.office a:hover {
+  background: linear-gradient(135deg, #6b0650, #c1276b);
+  transition: background 0.2s ease-in-out;
+}
+
+.hobby a:hover {
+  background: linear-gradient(135deg, #8b3913, #e0955a);
+  transition: background 0.2s ease-in-out;
+}
 
 .gradient-line-1 {
   margin-left: 12%;
