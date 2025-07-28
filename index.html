@@ -17,6 +17,7 @@
 <body>
   <div class="flashlight-overlay"></div>
   <div class="gradientfilter"></div>
+  
 
   <div class="container-1" id="home">
   <header>
@@ -24,6 +25,7 @@
     <p class="typewriter-text"></p>
   </header>
   </div>
+  <div class="bg-image"></div>
   
   <script>
     const roles = [
@@ -63,13 +65,16 @@
   </script>
 
   <script>
-    const flashlight = document.querySelector('.flashlight-overlay');
+    const flashlight1 = document.querySelector('.flashlight-overlay');
+    const flashlight2 = document.querySelector('.gradientfilter');
 
     document.addEventListener('mousemove', (e) => {
       const x = `${e.clientX}px`;
       const y = `${e.clientY}px`;
-      flashlight.style.setProperty('--x', x);
-      flashlight.style.setProperty('--y', y);
+      flashlight1.style.setProperty('--x', x);
+      flashlight1.style.setProperty('--y', y);
+      flashlight2.style.setProperty('--x', x);
+      flashlight2.style.setProperty('--y', y);
     });
   </script>
   </body>
