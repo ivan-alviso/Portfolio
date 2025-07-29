@@ -249,6 +249,7 @@ p a i:hover {
 
 .project-name {
   position: relative;
+  overflow: hidden;
 }
 
 .like {
