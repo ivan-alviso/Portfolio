@@ -1,12 +1,11 @@
 const images = [
   {
     src: "illustrations/Shark-1.jpg",
-    caption: "An editorial cartoon that powerfully illustrates the threat of illegal fishing to marine ecosystems, highlighting its destructive impact on shark habitats and the broader oceanic environment."
+    caption: "An editorial cartoon that depicts the destructive impact of illegal fishing on marine ecosystems, focusing on the critical threat it poses to shark populations and oceanic balance."
   },
   {
     src: "illustrations/France-1.jpg",
-    caption: "This cartoon symbolizes France's active and urgent effort to deliver humanitarian or military aid to the Philippines, likely in response to a crisis, disaster, or conflict."
-              + "The size of the crate and the focused trajectory underscore the magnitude and intent behind the assistance—depicting it as impactful and essential."
+    caption: "This cartoon portrays France’s urgent and deliberate assistance to the Philippines, emphasizing the scale, precision, and significance of its humanitarian or military support."
   }
 ];
 
