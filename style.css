@@ -254,7 +254,7 @@ p a i:hover {
 
 .like {
   position: absolute;
-  margin-top: -25px;
+  margin-top: -30px;
   margin-left: 80%;
 }
 
@@ -271,7 +271,7 @@ p a i:hover {
 
 .like-btn.liked,
 .like-btn:hover {
-  color: #1877f2; /* Facebook blue */
+  color: #a2caff; /* Facebook blue */
 }
 
 .project-wrapper {
@@ -367,6 +367,7 @@ p a i:hover {
   height: 400px;         
   object-fit: cover;     
   display: block;
+  overflow: hidden;
   position: relative;
   transition: transform 0.3s ease;
 }
