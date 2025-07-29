@@ -358,6 +358,7 @@ p a i:hover {
   height: 100%;
   object-fit: cover; /* maintains aspect ratio and fills container */
   display: block;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
@@ -366,6 +367,7 @@ p a i:hover {
   height: 400px;         
   object-fit: cover;     
   display: block;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
