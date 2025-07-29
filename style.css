@@ -288,35 +288,36 @@ p a i:hover {
 
 .gallery {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .nav {
   position: absolute;
+  overflow: hidden;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+  color: rgb(46, 63, 158);
   border: none;
   padding: 12px;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 999999999999;
   transition: background 0.3s;
 }
 
 .nav:hover {
-  background-color: rgba(255,255,255,0.3);
+  font-size: 40px;
 }
 
-.left {
+.nav-left {
   left: 10px;
 }
 
-.right {
+.nav-right {
   right: 10px;
 }
 
@@ -325,6 +326,7 @@ p a i:hover {
   position: relative;
   flex-direction: column;
   width: 700px;
+  height: auto;
   margin-left: 15px;
   border-radius: 20px;
   padding: 20px;
@@ -345,13 +347,13 @@ p a i:hover {
   overflow: hidden;
 }
 
-.illustration-image { 
-  position:sticky;  
-  border-radius: 10px;
-  margin-bottom: 20px;
-  width: auto;
-  height:400px;
-  overflow: hidden;
+.illustration-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .proj-image {
@@ -364,12 +366,12 @@ p a i:hover {
 }
 
 .illust-image {
-  width: 100%;          
-  height: 400px;         
-  object-fit: cover;     
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  position: relative;
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  z-index: 0;
 }
 
 .project-name h1{

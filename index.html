@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  
+
   <div class="page-wrapper">
   <div class="intro">
     <div class="flashlight-overlay"></div>
@@ -119,15 +119,17 @@
         </div>
 
         <div class="gallery">
-          <button class="nav left" onclick="prevImage()"><</button>
-            <div class="illustration-image">
-              <img src="illustrations/Shark-1.jpg" alt="Shark" class="illust-image" id="galleryImage">
-            </div>
-          <button class="nav right" onclick="nextImage()">></button>
+          <button class="nav nav-left" onclick="prevImage()">&#10094;</button>
+          
+          <div class="illustration-image">
+            <img src="illustrations/Shark-1.jpg" alt="Shark" class="illust-image" id="galleryImage">
+          </div>
+          
+          <button class="nav nav-right" onclick="nextImage()">&#10095;</button>
         </div>
 
         <div class="project-name">
-          <p style="margin-top: -10px; margin-left: -2px; width: 100%;" id="caption">
+          <p style="margin-top: 10px; margin-left: -8px; width: 100%;" id="caption">
           An editorial cartoon that powerfully illustrates 
           the threat of illegal fishing to marine ecosystems, highlighting its destructive impact on shark 
           habitats and the broader oceanic environment.
