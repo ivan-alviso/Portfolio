@@ -372,13 +372,15 @@ p a i:hover {
 .project-name h1{
   font-size: 20px;
   margin-left: 30px;
+  padding-top: 10px;
   margin-top: -10px;
   width: 250px;
 }
 
 .project-name p{
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
   font-size: 15px;
   width: 250px;
   color: #9eb6eb;
@@ -388,6 +390,7 @@ p a i:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   margin-top: 1rem;
+  padding: 5px;
   max-width: 500px;
   margin-top: 20px;
 }
