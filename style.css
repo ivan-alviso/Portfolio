@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   color-scheme: light;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  scroll-behavior: smooth;
 }
 
 .gradientfilter {
@@ -161,8 +162,10 @@ p a i:hover {
 .content-scroll {
   flex: 2;
   display: flex;
+  scroll-snap-type:none;
   flex-direction: row;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;       
   -ms-overflow-style: none; 
@@ -173,11 +176,12 @@ p a i:hover {
   display: none;
 }
 
-.skill-set{
-  padding-bottom: 100px;
+.projects{
+  flex: 1.5;
+  padding: 2rem;
+  color: #fff;
 }
 
-.projects,
 .skills {
   flex: 1;
   padding: 2rem;
@@ -199,11 +203,11 @@ p a i:hover {
 
 .coding, .media, .hobby, .office{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
   gap: 12px;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 500px;
+  max-width: 350px;
 }
 
 .coding a, .media a, .hobby a, .office a {
@@ -271,19 +275,55 @@ p a i:hover {
 
 .project-wrapper {
   display: flex;
-  width: 600px;
+  width: 700px;
+  height: 300px;
   margin-left: 15px;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(120deg, #072746, #1a3061);
+  gap: 10px;
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
 }
 
 .illustration-wrapper {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 600px;
+  width: 700px;
   margin-left: 15px;
   border-radius: 20px;
   padding: 20px;
@@ -296,11 +336,11 @@ p a i:hover {
   transform: scale(1.05);
 }
 
-.project-image {      
+.project-image {
   border-radius: 10px;
-  width: 1200px;
+  width: 60%;
+  height: 100%;
   overflow: hidden;
-  height:auto;
 }
 
 .illustration-image {   
@@ -313,9 +353,9 @@ p a i:hover {
 }
 
 .proj-image {
-  width: 100%;          
-  height: 200px;         
-  object-fit: cover;     
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintains aspect ratio and fills container */
   display: block;
   transition: transform 0.3s ease;
 }
@@ -348,7 +388,7 @@ p a i:hover {
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   margin-top: 1rem;
   max-width: 500px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .tools-used a{
