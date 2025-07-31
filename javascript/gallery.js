@@ -5,7 +5,11 @@ const images = [
   },
   {
     src: "illustrations/France-1.jpg",
-    caption: "This cartoon portrays France’s urgent and deliberate assistance to the Philippines, emphasizing the scale, precision, and significance of its humanitarian or military support."
+    caption: "This cartoon portrays France's urgent and deliberate assistance to the Philippines, emphasizing the scale, precision, and significance of its humanitarian or military support."
+  },
+  {
+  src: "illustrations/Child-1.jpg",
+    caption: "This cartoon depicts a bloody imbalance of justice. It critiques a justice system where innocence is corrupted and justice is silenced."
   }
 ];
 

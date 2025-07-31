@@ -348,10 +348,12 @@ p a i:hover {
 }
 
 .nav-left {
+  background-color: transparent;
   left: 10px;
 }
 
 .nav-right {
+  background-color: transparent;
   right: 10px;
 }
 
@@ -405,6 +407,7 @@ p a i:hover {
   object-fit: cover;
   display: block;
   border-radius: 10px;
+  transition: transform 0.3s ease;
   z-index: 0;
 }
 
