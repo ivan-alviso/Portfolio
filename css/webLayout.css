@@ -476,31 +476,4 @@ p a i:hover {
   background-size: 100%;
 }
 
-@media (max-width: 800px) {
-
-  .page-wrapper, .content-scroll{
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 22px;
-    padding-left: 25%;
-  }
-
-  .typewriter-text {
-    font-size: 15px;
-    padding-left: 25%;
-  }
-
-  .flashlight-overlay {
-  background: radial-gradient(
-    circle at var(--x, 50%) var(--y, 50%),
-    transparent 35px,
-    rgb(82, 165, 201) 120px
-  );
-}
-
-
-}
-
 
