@@ -58,61 +58,60 @@
       <div class="gradient-line-2" style="margin-left: 48%; width: 40px;"></div>
 
       <div class="project-list">
+        <div class="project-wrapper"> 
+          <div class="project-image">
+            <img src="coding-projects/smart-sofdes.jpg" alt="SMART Software" class="proj-image">
+          </div>
+        <div class="project-name">
+          <h1>SMART</h1>
+          <div class="like">
+            <button class="like-btn" onclick="toggleLike(this)">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+          </div>
+          <p>SMART (Student Management and Academic Records Tracker) offers a centralized platform for managing student profiles, grades, and academic records.</p>
+          <div class="tools-used">
+            <a>Java</a>
+            <a>MySQL</a>
+          </div>
+        </div>
+        </div>
 
-      <div class="project-wrapper">
-        <div class="project-image">
-          <img src="coding-projects/smart-sofdes.jpg" alt="SMART Software" class="proj-image">
+        <div class="project-wrapper">
+          <div class="project-image">
+            <img src="coding-projects/Techlapia.jpg" alt="Techlapia" class="proj-image">
+          </div>
+        <div class="project-name">
+          <h1>Tilapia Recognition</h1>
+          <div class="like">
+            <button class="like-btn" onclick="toggleLike(this)">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+          </div>
+          <p>A real-time system using Raspberry Pi, OpenCV, and YOLO to detect and count tilapia fish with 97% accuracy for efficient aquaculture monitoring.</p>
+          <div class="tools-used">
+            <a>Python</a>
+            <a>RPi</a>
+          </div>
         </div>
-      <div class="project-name">
-        <h1>SMART</h1>
-        <div class="like">
-          <button class="like-btn" onclick="toggleLike(this)">
-            <i class="fa-regular fa-thumbs-up"></i>
-          </button>
         </div>
-        <p>SMART (Student Management and Academic Records Tracker) offers a centralized platform for managing student profiles, grades, and academic records.</p>
-        <div class="tools-used">
-          <a>Java</a>
-          <a>MySQL</a>
-        </div>
-      </div>
-      </div>
 
-      <div class="project-wrapper">
-        <div class="project-image">
-          <img src="coding-projects/Techlapia.jpg" alt="Techlapia" class="proj-image">
+        <div class="project-wrapper">
+          <div class="project-image">
+            <img src="coding-projects/Weiner.jpg" alt="Weiner-denoising" class="proj-image">
+          </div>
+        <div class="project-name">
+          <h1>Weiner Denoising</h1>
+          <div class="like">
+            <button class="like-btn" onclick="toggleLike(this)">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+          </div>
+          <p>A Wiener filtering program for denoising Gaussian noise in images, running on Octave with a simple GUI.</p>
+          <div class="tools-used">
+            <a>Octave</a>
+          </div>
         </div>
-      <div class="project-name">
-        <h1>Tilapia Recognition</h1>
-        <div class="like">
-          <button class="like-btn" onclick="toggleLike(this)">
-            <i class="fa-regular fa-thumbs-up"></i>
-          </button>
-        </div>
-        <p>A real-time system using Raspberry Pi, OpenCV, and YOLO to detect and count tilapia fish with 97% accuracy for efficient aquaculture monitoring.</p>
-        <div class="tools-used">
-          <a>Python</a>
-          <a>RPi</a>
-        </div>
-      </div>
-      </div>
-
-      <div class="project-wrapper">
-        <div class="project-image">
-          <img src="coding-projects/Weiner.jpg" alt="Weiner-denoising" class="proj-image">
-        </div>
-      <div class="project-name">
-        <h1>Weiner Denoising</h1>
-        <div class="like">
-          <button class="like-btn" onclick="toggleLike(this)">
-            <i class="fa-regular fa-thumbs-up"></i>
-          </button>
-        </div>
-        <p>A Wiener filtering program for denoising Gaussian noise in images, running on Octave with a simple GUI.</p>
-        <div class="tools-used">
-          <a>Octave</a>
-        </div>
-      </div>
       </div>
 
       <div class="illustration-wrapper">
@@ -124,17 +123,17 @@
         </div>
 
         <div class="gallery">
-          <button class="nav nav-left" onclick="prevImage()">&#10094;</button>
+          <button class="nav nav-left" onclick="prevIllustration()">&#10094;</button>
           
           <div class="illustration-image">
-            <img src="illustrations/Shark-1.jpg" alt="Shark" class="illust-image" id="galleryImage">
+            <img src="illustrations/Shark-1.jpg" alt="Shark" class="illust-image" id="galleryIllustrations">
           </div>
           
-          <button class="nav nav-right" onclick="nextImage()">&#10095;</button>
+          <button class="nav nav-right" onclick="nextIllustration()">&#10095;</button>
         </div>
 
         <div class="project-name">
-          <p id="caption">
+          <p id="illustration-caption">
           An editorial cartoon that powerfully illustrates 
           the threat of illegal fishing to marine ecosystems, highlighting its destructive impact on shark 
           habitats and the broader oceanic environment.
@@ -145,7 +144,33 @@
         </div>
       </div>
 
+        <div class="illustration-wrapper">
+          <h1 style="font-size: 20px; margin-bottom: 20px;">Graphic Designs</h1>
+          <div class="like">
+            <button class="like-btn" onclick="toggleLike(this)">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+          </div>
 
+          <div class="gallery">
+            <button class="nav nav-left" onclick="prevDesign()">&#10094;</button>
+            
+            <div class="illustration-image">
+              <img src="designs/computer-engineering.jpg" alt="ComEngr" class="illust-image" id="galleryDesigns">
+            </div>
+            
+            <button class="nav nav-right" onclick="nextDesign()">&#10095;</button>
+          </div>
+
+          <div class="project-name">
+            <p id="design-caption">
+            I created the official T-shirt design for the entire Computer Engineering Department, representing all academic year levels.
+          </p>
+            <div class="tools-used">
+              <a style="margin-left: -2px; width: 100px;">Photoshop</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -194,7 +219,8 @@
 
   <script src="javascript/toggleLike.js"></script>
   <script src="javascript/typer.js"></script>
-  <script src="javascript/gallery.js"></script>
+  <script src="javascript/illustration-gallery.js"></script>
+  <script src="javascript/designs-gallery.js"></script>
   <script src="javascript/light.js"></script>
     
   </body>
