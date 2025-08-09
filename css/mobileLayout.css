@@ -84,8 +84,8 @@ header p {
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
   font-size: 20px;
 }
 
@@ -173,7 +173,7 @@ p a i:hover {
 .about-section > .gradient-line-1{
   width: 100px;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .about-section, .skill-set{
@@ -468,3 +468,21 @@ p a i:hover {
   );
   background-size: 100%;
 }
+
+.resume-btn{
+  display: inline-block;
+  padding: 5px 10px;
+  background: linear-gradient(to right, rgb(26, 77, 153), rgb(9, 114, 88));
+  color: white;
+  margin-top: -20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+      background: linear-gradient(to right, rgb(54, 122, 224), rgb(18, 224, 173));
+}
+

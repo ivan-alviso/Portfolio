@@ -55,7 +55,7 @@ body {
 header{
   margin: 0;
   width: 70%;
-  margin-left: 80px;
+  margin-left: 40px;
   text-align: left;
   color: #333;
 }
@@ -156,8 +156,8 @@ p a i:hover {
 }
 
 .about-section{
-  margin-left: 80px;
-  margin-top: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .about-section > .gradient-line-1{
@@ -182,7 +182,7 @@ p a i:hover {
   scrollbar-width: none;       
   -ms-overflow-style: none; 
   height: 100vh;
-  gap: 50px;
+  gap: 5%;
 }
 
 .content-scroll::-webkit-scrollbar {
@@ -461,5 +461,22 @@ p a i:hover {
     rgb(37, 65, 190),rgb(66, 228, 147)
   );
   background-size: 100%;
+}
+
+.resume-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, rgb(26, 77, 153), rgb(9, 114, 88));
+  color: white;
+  margin-top: 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+      background: linear-gradient(to right, rgb(54, 122, 224), rgb(18, 224, 173));
 }
 
