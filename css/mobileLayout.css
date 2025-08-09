@@ -263,28 +263,6 @@ p a i:hover {
   transition: background 0.2s ease-in-out;
 }
 
-.like {
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 80%;
-}
-
-.like-btn {
-  margin-left: 30px;
-  margin-top: -10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-  color: #2a74b1;
-  transition: color 0.3s;
-}
-
-.like-btn.liked,
-.like-btn:hover {
-  color: #a2caff; /* Facebook blue */
-}
-
 .project-wrapper {
   display: flex;
   flex: 1;
@@ -345,12 +323,6 @@ p a i:hover {
   margin-left: 0px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(120deg, #072746, #1a3061);
-}
-
-.illustration-wrapper > .like{
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 72.5%;
 }
 
 .illustration-wrapper > h1{
