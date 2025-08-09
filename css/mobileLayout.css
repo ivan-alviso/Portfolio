@@ -337,7 +337,7 @@ p a i:hover {
   color: rgb(46, 63, 158);
   border: none;
   padding: 12px;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
   z-index: 999999999999;
@@ -345,7 +345,7 @@ p a i:hover {
 }
 
 .nav:hover {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .nav-left {
